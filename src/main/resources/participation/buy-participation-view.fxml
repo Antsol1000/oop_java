@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Button?>
+<DialogPane prefHeight="164.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.put.solarsan.op.gui.investor.fund.participation.BuyParticipationController">
+    <content>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="150.0" prefWidth="300.0">
+            <VBox prefHeight="150.0" prefWidth="150.0">
+                <Label prefHeight="30.0" prefWidth="150.0" text="budget"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="fund"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="value"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="price"/>
+            </VBox>
+            <VBox prefHeight="150.0" prefWidth="150.0">
+                <Label fx:id="budgetLabel" prefHeight="30.0"/>
+                <ChoiceBox fx:id="fundChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="valueTextField" prefHeight="30.0"/>
+                <Label fx:id="priceLabel" prefHeight="30.0"/>
+                <Button fx:id="refreshButton" mnemonicParsing="false"
+                        prefHeight="30.0" prefWidth="150.0" text="refresh"/>
+            </VBox>
+        </HBox>
+    </content>
+    <ButtonType fx:constant="OK"/>
+</DialogPane>

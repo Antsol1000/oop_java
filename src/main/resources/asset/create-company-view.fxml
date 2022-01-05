@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<DialogPane prefHeight="224.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.put.solarsan.op.gui.asset.CreateCompanyController" >
+    <content>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="300.0">
+            <children>
+                <VBox prefHeight="210.0" prefWidth="150.0">
+                    <children>
+                        <Label prefHeight="30.0" prefWidth="150.0" text="name" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="opening price" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="IPO date" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="IPO share value" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="capital" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="profit" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="revenue" />
+                    </children>
+                </VBox>
+                <VBox prefHeight="210.0" prefWidth="150.0">
+                    <children>
+                        <TextField fx:id="nameTextField" prefHeight="30.0" />
+                        <TextField fx:id="openingPriceTextField" prefHeight="30.0" />
+                        <TextField fx:id="ipoDateTextField" prefHeight="30.0" />
+                        <TextField fx:id="ipoShareValueTextField" prefHeight="30.0" />
+                        <TextField fx:id="capitalTextField" prefHeight="30.0" />
+                        <TextField fx:id="profitTextField" prefHeight="30.0" />
+                        <TextField fx:id="revenueTextField" prefHeight="30.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </content>
+    <buttonTypes>
+        <ButtonType fx:constant="OK" />
+    </buttonTypes>
+</DialogPane>

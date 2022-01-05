@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="120.0" prefWidth="300.0"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.put.solarsan.op.gui.asset.equity.EquityController">
+    <children>
+        <VBox prefHeight="120.0" prefWidth="150.0">
+            <children>
+                <Label prefHeight="30.0" prefWidth="150.0" text="name" />
+                <Label prefHeight="30.0" prefWidth="150.0" text="original price" />
+                <Label prefHeight="30.0" prefWidth="150.0" text="current price" />
+                <Button onAction="#onRefreshButtonClick" mnemonicParsing="false"
+                        prefHeight="30.0" prefWidth="150.0" text="refresh" />
+            </children>
+        </VBox>
+        <VBox prefHeight="120.0" prefWidth="150.0">
+            <children>
+                <Label fx:id="nameLabel" prefHeight="30.0" />
+                <Label fx:id="originalPriceLabel" prefHeight="30.0" />
+                <Label fx:id="currentPriceLabel" prefHeight="30.0" />
+                <Button onAction="#onSellButtonClick" mnemonicParsing="false"
+                        prefHeight="30.0" prefWidth="150.0" text="sell" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

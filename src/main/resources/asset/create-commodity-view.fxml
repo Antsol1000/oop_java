@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<DialogPane prefHeight="104.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.put.solarsan.op.gui.asset.CreateCommodityController" >
+    <content>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="90.0" prefWidth="300.0">
+            <children>
+                <VBox prefHeight="90.0" prefWidth="150.0">
+                        <Label prefHeight="30.0" prefWidth="150.0" text="name" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="opening price" />
+                        <Label prefHeight="30.0" prefWidth="150.0" text="unit" />
+                </VBox>
+                <VBox prefHeight="90.0" prefWidth="150.0">
+                    <children>
+                        <TextField fx:id="nameTextField" prefHeight="30.0" />
+                        <TextField fx:id="openingPriceTextField" prefHeight="30.0" />
+                        <TextField fx:id="unitTextField" prefHeight="30.0" />
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </content>
+    <buttonTypes>
+        <ButtonType fx:constant="OK" />
+    </buttonTypes>
+</DialogPane>
