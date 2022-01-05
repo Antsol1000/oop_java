@@ -11,7 +11,7 @@
 <?import javafx.scene.control.Button?>
 <DialogPane prefHeight="164.0" prefWidth="300.0"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.put.solarsan.op.gui.investor.fund.participation.BuyParticipationController">
+            fx:controller="com.antsol.op.gui.investor.fund.participation.BuyParticipationController">
     <content>
         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               prefHeight="150.0" prefWidth="300.0">

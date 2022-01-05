@@ -1,45 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ButtonType?>
-<?import javafx.scene.control.DialogPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Button?>
 <DialogPane prefHeight="194.0" prefWidth="300.0"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.put.solarsan.op.gui.asset.equity.BuyEquityController" >
+            fx:controller="com.antsol.op.gui.asset.equity.BuyEquityController">
     <content>
         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               prefHeight="180.0" prefWidth="300.0">
-            <children>
-                <VBox prefHeight="180.0" prefWidth="150.0">
-                    <children>
-                        <Label prefHeight="30.0" prefWidth="150.0" text="budget" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="market" />
-                        <Label fx:id="assetLabel" prefHeight="30.0" prefWidth="150.0" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="value" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="price" />
-                    </children>
-                </VBox>
-                <VBox prefHeight="180.0" prefWidth="150.0">
-                    <children>
-                        <Label fx:id="budgetLabel" prefHeight="30.0" />
-                        <ChoiceBox fx:id="marketChoiceBox" prefHeight="30.0" />
-                        <ChoiceBox fx:id="assetChoiceBox" prefHeight="30.0" />
-                        <TextField fx:id="valueTextField" prefHeight="30.0" />
-                        <Label fx:id="priceLabel" prefHeight="30.0" />
-                        <Button fx:id="refreshButton" mnemonicParsing="false"
-                                prefHeight="30.0" prefWidth="150.0" text="refresh" />
-                    </children>
-                </VBox>
-            </children>
+            <VBox prefHeight="180.0" prefWidth="150.0">
+                <Label prefHeight="30.0" prefWidth="150.0" text="budget"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="market"/>
+                <Label fx:id="assetLabel" prefHeight="30.0" prefWidth="150.0"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="value"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="price"/>
+            </VBox>
+            <VBox prefHeight="180.0" prefWidth="150.0">
+                <Label fx:id="budgetLabel" prefHeight="30.0"/>
+                <ChoiceBox fx:id="marketChoiceBox" prefHeight="30.0"/>
+                <ChoiceBox fx:id="assetChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="valueTextField" prefHeight="30.0"/>
+                <Label fx:id="priceLabel" prefHeight="30.0"/>
+                <Button fx:id="refreshButton" mnemonicParsing="false"
+                        prefHeight="30.0" prefWidth="150.0" text="refresh"/>
+            </VBox>
         </HBox>
     </content>
-    <buttonTypes>
-        <ButtonType fx:constant="OK" />
-    </buttonTypes>
+    <ButtonType fx:constant="OK"/>
 </DialogPane>

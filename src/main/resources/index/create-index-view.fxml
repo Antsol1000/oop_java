@@ -1,43 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ButtonType?>
-<?import javafx.scene.control.DialogPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.MenuButton?>
 <DialogPane prefHeight="194.0" prefWidth="300.0"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.put.solarsan.op.gui.market.index.CreateIndexController" >
+            fx:controller="com.antsol.op.gui.market.index.CreateIndexController">
     <content>
         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               prefHeight="120.0" prefWidth="300.0">
-            <children>
-                <VBox prefHeight="120.0" prefWidth="150.0">
-                    <children>
-                        <Label prefHeight="30.0" prefWidth="150.0" text="type" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="name" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="number" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="companies" />
-                    </children>
-                </VBox>
-                <VBox prefHeight="120.0" prefWidth="150.0">
-                    <children>
-                        <ChoiceBox fx:id="typeChoiceBox" prefHeight="30.0" />
-                        <TextField fx:id="nameTextField" prefHeight="30.0" />
-                        <TextField fx:id="valueTextField" prefHeight="30.0" />
-                        <MenuButton fx:id="companyMenuButton" prefHeight="30.0" prefWidth="150.0" />
-                    </children>
-                </VBox>
-            </children>
+            <VBox prefHeight="120.0" prefWidth="150.0">
+                <Label prefHeight="30.0" prefWidth="150.0" text="type"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="name"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="number"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="companies"/>
+            </VBox>
+            <VBox prefHeight="120.0" prefWidth="150.0">
+                <ChoiceBox fx:id="typeChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="nameTextField" prefHeight="30.0"/>
+                <TextField fx:id="valueTextField" prefHeight="30.0"/>
+                <MenuButton fx:id="companyMenuButton" prefHeight="30.0" prefWidth="150.0"/>
+            </VBox>
         </HBox>
     </content>
-    <buttonTypes>
-        <ButtonType fx:constant="OK" />
-    </buttonTypes>
+    <ButtonType fx:constant="OK"/>
 </DialogPane>

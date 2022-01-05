@@ -1,34 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <DialogPane prefHeight="74.0" prefWidth="300.0"
             xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.put.solarsan.op.gui.asset.CreateCurrencyAssetController" >
+            fx:controller="com.antsol.op.gui.asset.CreateCurrencyAssetController">
     <content>
         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
               prefHeight="60.0" prefWidth="300.0">
-            <children>
-                <VBox prefHeight="60.0" prefWidth="150.0">
-                    <children>
-                        <Label prefHeight="30.0" prefWidth="150.0" text="opening price" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="currency" />
-                    </children>
-                </VBox>
-                <VBox prefHeight="60.0" prefWidth="150.0">
-                    <children>
-                        <ChoiceBox fx:id="currencyChoiceBox" prefHeight="30.0" />
-                        <TextField fx:id="openingPriceTextField" prefHeight="30.0" />
-                    </children>
-                </VBox>
-            </children>
+            <VBox prefHeight="60.0" prefWidth="150.0">
+                <Label prefHeight="30.0" prefWidth="150.0" text="opening price"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="currency"/>
+            </VBox>
+            <VBox prefHeight="60.0" prefWidth="150.0">
+                <ChoiceBox fx:id="currencyChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="openingPriceTextField" prefHeight="30.0"/>
+            </VBox>
         </HBox>
     </content>
-    <buttonTypes>
-        <ButtonType fx:constant="OK" />
-    </buttonTypes>
+    <ButtonType fx:constant="OK"/>
 </DialogPane>

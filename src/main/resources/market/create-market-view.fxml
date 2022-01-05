@@ -1,43 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ButtonType?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.DialogPane?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
-<DialogPane prefHeight="230.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.put.solarsan.op.gui.market.CreateMarketController">
+<DialogPane prefHeight="230.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.antsol.op.gui.market.CreateMarketController">
     <content>
-        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0" prefWidth="300.0">
-            <children>
-                <VBox prefHeight="210.0" prefWidth="150.0">
-                    <children>
-                        <Label prefHeight="30.0" prefWidth="150.0" text="type" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="name" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="country" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="city" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="address" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="currency" />
-                        <Label prefHeight="30.0" prefWidth="150.0" text="margin" />
-                    </children>
-                </VBox>
-                <VBox prefHeight="210.0" prefWidth="150.0">
-                    <children>
-                        <ChoiceBox fx:id="marketTypeChoiceBox" prefHeight="30.0" />
-                        <TextField fx:id="nameTextField" prefHeight="30.0" />
-                        <TextField fx:id="countryTextField" prefHeight="30.0" />
-                        <TextField fx:id="cityTextField" prefHeight="30.0" />
-                        <TextField fx:id="addressTextField" prefHeight="30.0" />
-                        <ChoiceBox fx:id="currencyChoiceBox" prefHeight="30.0" />
-                        <TextField fx:id="marginTextField" prefHeight="30.0" />
-                    </children>
-                </VBox>
-            </children>
+        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="210.0"
+              prefWidth="300.0">
+            <VBox prefHeight="210.0" prefWidth="150.0">
+                <Label prefHeight="30.0" prefWidth="150.0" text="type"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="name"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="country"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="city"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="address"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="currency"/>
+                <Label prefHeight="30.0" prefWidth="150.0" text="margin"/>
+            </VBox>
+            <VBox prefHeight="210.0" prefWidth="150.0">
+                <ChoiceBox fx:id="marketTypeChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="nameTextField" prefHeight="30.0"/>
+                <TextField fx:id="countryTextField" prefHeight="30.0"/>
+                <TextField fx:id="cityTextField" prefHeight="30.0"/>
+                <TextField fx:id="addressTextField" prefHeight="30.0"/>
+                <ChoiceBox fx:id="currencyChoiceBox" prefHeight="30.0"/>
+                <TextField fx:id="marginTextField" prefHeight="30.0"/>
+            </VBox>
         </HBox>
     </content>
-    <buttonTypes>
-        <ButtonType fx:constant="OK" />
-    </buttonTypes>
+    <ButtonType fx:constant="OK"/>
 </DialogPane>

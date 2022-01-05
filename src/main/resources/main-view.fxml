@@ -1,56 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.layout.FlowPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
           prefHeight="400.0" prefWidth="600.0"
           xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-          fx:controller="com.put.solarsan.op.gui.MainController">
-   <children>
-      <ToolBar prefHeight="50.0" prefWidth="600.0">
-        <items>
-            <Label prefHeight="17.0" prefWidth="503.0" text="hello world" />
-          <Button onAction="#onSettingsButtonClick" mnemonicParsing="false" text="settings" />
-        </items>
-      </ToolBar>
-      <HBox prefHeight="350.0" prefWidth="600.0">
-         <children>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
-               <children>
-                  <Label alignment="TOP_LEFT" text="CURRENCIES" />
-                  <ListView fx:id="currencies" prefHeight="300.0" prefWidth="200.0" />
-                  <Button onAction="#onCreateCurrencyButtonClick" mnemonicParsing="false" text="create" />
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
-               <children>
-                  <Label text="MARKETS" />
-                  <ListView fx:id="markets" prefHeight="300.0" prefWidth="200.0" />
-                  <Button onAction="#onCreateMarketButtonClick" mnemonicParsing="false" text="create" />
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
-               <children>
-                  <Label text="FUNDS" />
-                  <ListView fx:id="funds" prefHeight="300.0" prefWidth="200.0" />
-                  <Button onAction="#onCreateFundButtonClick" mnemonicParsing="false" text="create" />
-               </children>
-            </VBox>
-            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
-               <children>
-                  <Label text="INVESTORS" />
-                  <ListView fx:id="investors" prefHeight="300.0" prefWidth="200.0" />
-                  <Button onAction="#onCreateInvestorButtonClick" mnemonicParsing="false" text="create" />
-               </children>
-            </VBox>
-         </children>
-      </HBox>
-   </children>
+          fx:controller="com.antsol.op.gui.admin.MainController">
+    <ToolBar prefHeight="50.0" prefWidth="600.0">
+        <Label prefHeight="17.0" prefWidth="503.0" text="hello world"/>
+        <Button onAction="#onSettingsButtonClick" mnemonicParsing="false" text="settings"/>
+    </ToolBar>
+    <HBox prefHeight="350.0" prefWidth="600.0">
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+            <Label alignment="TOP_LEFT" text="CURRENCIES"/>
+            <ListView fx:id="currencies" prefHeight="300.0" prefWidth="200.0"/>
+            <Button onAction="#onCreateCurrencyButtonClick" mnemonicParsing="false" text="create"/>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+            <Label text="MARKETS"/>
+            <ListView fx:id="markets" prefHeight="300.0" prefWidth="200.0"/>
+            <Button onAction="#onCreateMarketButtonClick" mnemonicParsing="false" text="create"/>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+            <Label text="FUNDS"/>
+            <ListView fx:id="funds" prefHeight="300.0" prefWidth="200.0"/>
+            <Button onAction="#onCreateFundButtonClick" mnemonicParsing="false" text="create"/>
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="150.0">
+            <Label text="INVESTORS"/>
+            <ListView fx:id="investors" prefHeight="300.0" prefWidth="200.0"/>
+            <Button onAction="#onCreateInvestorButtonClick" mnemonicParsing="false" text="create"/>
+        </VBox>
+    </HBox>
 </FlowPane>

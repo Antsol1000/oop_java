@@ -1,45 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
 
-
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
       prefHeight="210.0" prefWidth="400.0"
       xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.put.solarsan.op.gui.market.MarketController" >
-   <children>
-      <HBox prefHeight="90.0" prefWidth="200.0">
-         <children>
-            <VBox prefHeight="90.0" prefWidth="200.0">
-               <children>
-                  <Label fx:id="typeLabel" prefHeight="30.0" prefWidth="200.0" />
-                  <Label fx:id="currencyLabel" prefHeight="30.0" prefWidth="200.0" />
-                  <Label text="margin" prefHeight="30.0" prefWidth="200.0" />
-               </children>
-            </VBox>
-            <VBox prefHeight="90.0" prefWidth="200.0">
-               <children>
-                  <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="200.0" />
-                  <Label fx:id="addressLabel" prefHeight="30.0" prefWidth="200.0" />
-                  <Label fx:id="marginLabel" prefHeight="30.0" prefWidth="200.0" />
-               </children>
-            </VBox>
-         </children>
-      </HBox>
-      <VBox prefHeight="90.0" prefWidth="100.0">
-         <children>
-            <ListView fx:id="assetsListView" prefHeight="90.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <HBox prefHeight="30.0" prefWidth="200.0">
-         <children>
-            <Button onAction="#onCreateButtonClick" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Create" />
-            <Button onAction="#onRemoveButtonClick" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Delete" />
-         </children>
-      </HBox>
-   </children>
+      fx:controller="com.antsol.op.gui.market.MarketController">
+    <HBox prefHeight="90.0" prefWidth="200.0">
+        <VBox prefHeight="90.0" prefWidth="200.0">
+            <Label fx:id="typeLabel" prefHeight="30.0" prefWidth="200.0"/>
+            <Label fx:id="currencyLabel" prefHeight="30.0" prefWidth="200.0"/>
+            <Label text="margin" prefHeight="30.0" prefWidth="200.0"/>
+        </VBox>
+        <VBox prefHeight="90.0" prefWidth="200.0">
+            <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="200.0"/>
+            <Label fx:id="addressLabel" prefHeight="30.0" prefWidth="200.0"/>
+            <Label fx:id="marginLabel" prefHeight="30.0" prefWidth="200.0"/>
+        </VBox>
+    </HBox>
+    <VBox prefHeight="90.0" prefWidth="100.0">
+        <ListView fx:id="assetsListView" prefHeight="90.0" prefWidth="200.0"/>
+    </VBox>
+    <HBox prefHeight="30.0" prefWidth="200.0">
+        <Button onAction="#onCreateButtonClick" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0"
+                text="Create"/>
+        <Button onAction="#onRemoveButtonClick" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0"
+                text="Delete"/>
+    </HBox>
 </VBox>
